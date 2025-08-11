@@ -32,16 +32,4 @@ g++ -std=c++17 -O2 -DLOCAL_TEST DAG/leetcode_2192.cpp -o run && ./run
 - 파일 상단에 **문제 링크 / 접근 / 복잡도**를 주석으로 간단히 기재
 - 출력은 문제 요구사항에 맞게 **정렬/형식**을 엄수
 
-## 문제 노트 링크
-- **LeetCode 2192 — All Ancestors of a Node in a DAG**: 위상 정렬 + 조상 집합 전파(bitset) 접근
-  - 구현: `DAG/leetcode_2192.cpp`
-  - 핵심: `anc[u] |= anc[v]; anc[u].set(v)` (간선 v→u)
-
-## 새 문제 추가 체크리스트
-- [ ] 카테고리 폴더 존재 여부 확인 (없으면 생성)
-- [ ] `leetcode_{번호}.cpp` 파일 생성
-- [ ] 상단 주석에 문제 링크 / 접근 / 복잡도 요약
-- [ ] `LOCAL_TEST` 블록에 스몰케이스 추가
-- [ ] 커밋 메시지: `feat({카테고리}): solve leetcode {번호} …`
-
 ---
