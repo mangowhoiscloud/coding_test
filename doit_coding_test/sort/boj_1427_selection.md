@@ -41,3 +41,4 @@ python doit_coding_test/sort/boj_1427_selection.py
     v
 [다시 이어붙여 출력]
 ```
+
