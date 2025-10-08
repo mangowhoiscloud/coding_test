@@ -1,0 +1,5 @@
+n = input()
+scores  = list(map(int, input().split()))
+max_score = max(scores)
+avg = sum(scores) / max_score * 100 / int(n)
+print(avg)
